@@ -1,0 +1,27 @@
+# 🔒 Secure Login System
+
+A basic authentication system developed in C++ with protection against repeated failed login attempts.
+
+## Features
+
+- Username and password authentication
+- Three login attempts
+- Account lock after multiple failures
+- Login activity report
+
+## Technologies
+
+- C++
+- Object-Oriented Programming (OOP)
+
+## How to Compile
+
+```bash
+g++ main.cpp -o login-system
+```
+
+## Run
+
+```bash
+./login-system
+```
