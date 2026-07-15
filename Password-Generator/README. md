@@ -1,0 +1,27 @@
+# 🔑 Password Generator
+
+A simple C++ application that generates stronger passwords by combining a username with random numbers and special characters.
+
+## Features
+
+- Username-based password generation
+- Random numbers
+- Special characters
+- Easy to use
+
+## Technologies
+
+- C++
+- Standard Library
+
+## How to Compile
+
+```bash
+g++ main.cpp -o password-generator
+```
+
+## Run
+
+```bash
+./password-generator
+```
