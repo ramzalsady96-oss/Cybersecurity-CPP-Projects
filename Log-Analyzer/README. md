@@ -1,0 +1,27 @@
+# 📊 Security Log Analyzer
+
+A simple C++ application that analyzes login events and reports suspicious login activity.
+
+## Features
+
+- Count successful logins
+- Count failed logins
+- Generate a security report
+- Detect multiple failed login attempts
+
+## Technologies
+
+- C++
+- Object-Oriented Programming (OOP)
+
+## How to Compile
+
+```bash
+g++ main.cpp -o log-analyzer
+```
+
+## Run
+
+```bash
+./log-analyzer
+```
