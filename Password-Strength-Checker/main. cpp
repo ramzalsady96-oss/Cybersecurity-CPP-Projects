@@ -1,0 +1,70 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class PasswordChecker
+{
+private:
+    string password;
+
+public:
+
+    void setPassword()
+    {
+        cout << "Enter password to check: ";
+        cin >> password;
+    }
+
+    void checkStrength()
+    {
+        int length = password.length();
+        int hasUpper = 0;
+        int hasDigit = 0;
+        int hasSymbol = 0;
+
+        for (int i = 0; i < length; i++)
+        {
+            if (password[i] >= 'A' && password[i] <= 'Z')
+                hasUpper = 1;
+
+            else if (password[i] >= '0' && password[i] <= '9')
+                hasDigit = 1;
+
+            else
+                hasSymbol = 1;
+        }
+
+        int score = 0;
+
+        if (length == 8)
+         score++;
+        if (hasUpper) 
+        score++;
+        if (hasDigit)
+         score++;
+        if (hasSymbol) 
+        score++;
+
+        cout << "\nPassword Strength: ";
+
+        if (score <= 1)
+            cout << "WEAK" << endl;
+
+        else if (score == 2 || score == 3)
+            cout << "MEDIUM" << endl;
+
+        else
+            cout << "STRONG" << endl;
+    }
+};
+
+int main()
+{
+    PasswordChecker pc;
+
+    pc.setPassword();
+    pc.checkStrength();
+
+    return 0;
+}
