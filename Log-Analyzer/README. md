@@ -23,5 +23,5 @@ g++ main.cpp -o log-analyzer
 ## Run
 
 ```bash
-./log-analyzer
+./log-analyzer 
 ```
