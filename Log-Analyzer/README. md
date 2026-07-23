@@ -20,7 +20,7 @@ A simple C++ application that analyzes login events and reports suspicious login
 g++ main.cpp -o log-analyzer
 ```
 
-## Run
+## Run y
 
 ```bash
 ./log-analyzer 
